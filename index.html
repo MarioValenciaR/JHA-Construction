@@ -1,0 +1,238 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>JHA Construction</title>
+  <meta name="description" content="Professional portfolio website with services section and a business-style header/hero layout." />
+
+  <link rel="stylesheet" href="assets/css/styles.css" />
+</head>
+<body>
+
+  <!-- Top Bar (red) -->
+  <div class="topbar" role="banner">
+    <div class="container topbar__inner">
+      <div class="topbar__left">
+        <a class="topbar__link" href="tel:16137064434" aria-label="Call us">
+          <span class="icon" aria-hidden="true">☎</span>
+          <span>8733551440</span>
+        </a>
+        <a class="topbar__link" href="mailto:info@mrfoundation.com" aria-label="Email us">
+          <span class="icon" aria-hidden="true">✉</span>
+          <span>jhaconstruction@outlook.com</span>
+        </a>
+      </div>
+
+      <div class="topbar__right">
+        <span class="topbar__tag"></span>
+      </div>
+    </div>
+  </div>
+
+  <!-- Main Header -->
+  <header class="header" id="siteHeader">
+    <div class="container header__inner">
+      <a class="brand" href="./assets/img/logo.png" aria-label="Home">
+        <!-- Reemplaza por tu logo -->
+        <img class="brand__logo" src="assets/img/logo.png" alt="Brand logo" />
+        <div class="brand__text">
+          <span class="brand__name"></span>
+          <span class="brand__sub"></span>
+        </div>
+      </a>
+
+      <nav class="nav" aria-label="Primary navigation">
+        <button class="nav__toggle" id="navToggle" aria-expanded="false" aria-controls="navMenu">
+          <span class="nav__toggleLine"></span>
+          <span class="nav__toggleLine"></span>
+          <span class="nav__toggleLine"></span>
+          <span class="sr-only">Open menu</span>
+        </button>
+
+        <ul class="nav__menu" id="navMenu">
+          <li><a class="nav__link is-active" href="#home">Home</a></li>
+
+          <!-- “Services” con dropdown (simple) -->
+          <li class="nav__item--dropdown">
+            <button class="nav__link nav__dropdownBtn" type="button" id="servicesDropdownBtn" aria-expanded="false">
+              Services <span class="caret" aria-hidden="true">▾</span>
+            </button>
+            <ul class="nav__dropdown" aria-label="Services submenu">
+              <li><a class="nav__sublink" href="#services">All Services</a></li>
+              <li><a class="nav__sublink" href="#services" data-service="crack">Foundation Crack Repair</a></li>
+              <li><a class="nav__sublink" href="#services" data-service="waterproof">Waterproofing</a></li>
+              <li><a class="nav__sublink" href="#services" data-service="drainage">Drainage Solutions</a></li>
+            </ul>
+          </li>
+
+          <li><a class="nav__link" href="#faq">FAQ</a></li>
+          <li><a class="nav__link" href="#careers">Careers</a></li>
+          <li><a class="nav__link" href="#request">Service Request</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main id="home">
+
+    <!-- HERO (como imagen 2) -->
+    <section class="hero">
+      <div class="container hero__grid">
+        <div class="hero__content">
+          <h1 class="hero__title">
+            <span class="hero__titleRed">Construction and Foundation</span>
+            <span class="hero__titleDark">Repair in Ottawa</span>
+          </h1>
+
+          <p class="hero__desc">
+            Focoused on construction and foundation repairs
+          </p>
+
+          <div class="hero__actions">
+            <a class="btn btn--primary" href="#request">Contact us now</a>
+            <a class="btn btn--ghost" href="#services">View Services</a>
+          </div>
+        </div>
+
+        <div class="hero__media">
+          <!-- Reemplaza por tu imagen tipo “truck/hero” -->
+          <img
+            class="hero__img"
+            src="assets/img/crackedWall.png"
+            alt="Service vehicle on-site"
+            loading="eager"
+          />
+        </div>
+      </div>
+    </section>
+
+    <!-- SERVICES (reemplaza SKILLS) -->
+    <section class="section" id="services">
+      <div class="container">
+        <div class="section__head">
+          <h2 class="section__title">Services</h2>
+          <p class="section__subtitle">
+            A clean, portfolio-ready section that matches the business style. Add or remove services as needed.
+          </p>
+        </div>
+
+        <div class="cards">
+          <article class="card" data-service="crack">
+            <h3 class="card__title">Foundation Crack Repair</h3>
+            <p class="card__text">
+              Targeted crack sealing and structural stabilization with professional assessment and clear scope.
+            </p>
+            <ul class="card__list">
+              <li>Interior/Exterior assessment</li>
+              <li>Injection & sealing options</li>
+              <li>Before/after documentation</li>
+            </ul>
+            <a class="card__link" href="#request">Request quote →</a>
+          </article>
+
+          <article class="card" data-service="waterproof">
+            <h3 class="card__title">Waterproofing</h3>
+            <p class="card__text">
+              Waterproofing solutions designed for Ottawa weather conditions and long-term protection.
+            </p>
+            <ul class="card__list">
+              <li>Membrane systems</li>
+              <li>Moisture mitigation</li>
+              <li>Preventative recommendations</li>
+            </ul>
+            <a class="card__link" href="#request">Request quote →</a>
+          </article>
+
+          <article class="card" data-service="drainage">
+            <h3 class="card__title">Drainage Solutions</h3>
+            <p class="card__text">
+              Reduce water pressure on foundations with improved drainage and site grading strategies.
+            </p>
+            <ul class="card__list">
+              <li>French drains & weeping tile</li>
+              <li>Downspout extensions</li>
+              <li>Grading improvements</li>
+            </ul>
+            <a class="card__link" href="#request">Request quote →</a>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Careers -->
+
+
+    <!-- Service Request -->
+    <section class="section section--alt" id="request">
+      <div class="container">
+        <div class="section__head">
+          <h2 class="section__title">Service Request</h2>
+        </div>
+
+        <form class="form" id="serviceForm" novalidate>
+          <div class="form__grid">
+            <label class="field">
+              <span class="field__label">Full Name</span>
+              <input class="field__input" type="text" name="name" required placeholder="Your name" />
+              <span class="field__error" data-error-for="name"></span>
+            </label>
+
+            <label class="field">
+              <span class="field__label">Email</span>
+              <input class="field__input" type="email" name="email" required placeholder="you@email.com" />
+              <span class="field__error" data-error-for="email"></span>
+            </label>
+
+            <label class="field">
+              <span class="field__label">Phone</span>
+              <input class="field__input" type="tel" name="phone" placeholder="613-000-0000" />
+              <span class="field__error" data-error-for="phone"></span>
+            </label>
+
+            <label class="field">
+              <span class="field__label">Service Type</span>
+              <select class="field__input" name="service" required>
+                <option value="">Select…</option>
+                <option value="crack">Foundation Crack Repair</option>
+                <option value="waterproof">Waterproofing</option>
+                <option value="drainage">Drainage</option>
+                <option value="drainage">Other</option>
+              </select>
+              <span class="field__error" data-error-for="service"></span>
+            </label>
+
+            <label class="field field--full">
+              <span class="field__label">Details</span>
+              <textarea class="field__input" name="details" rows="5" required placeholder="Describe the issue briefly..."></textarea>
+              <span class="field__error" data-error-for="details"></span>
+            </label>
+          </div>
+
+          <div class="form__actions">
+            <button class="btn btn--primary" type="submit">Submit Request</button>
+            <p class="form__hint" id="formHint" aria-live="polite"></p>
+          </div>
+        </form>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="footer">
+    <div class="container footer__inner">
+      <div>
+        <strong>JHA CONSTRUCTION</strong>
+        <div class="footer__muted">The repair experts</div>
+      </div>
+      <div class="footer__links">
+        <a href="#services">Services</a>
+        <a href="#request">Service Request</a>
+        <a href="mailto:info@mrfoundation.com">Contact</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="assets/js/main.js"></script>
+</body>
+</html>
